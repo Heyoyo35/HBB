@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เล่นเพลงในเว็บ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Itim', sans-serif;
+    }
+    @keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  75% { transform: rotate(-3deg); }
+}
+
+.wiggle {
+  animation: wiggle 2s infinite;
+}
+
+    @keyframes wiggle1 {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+}
+
+.wiggle1 {
+  animation: wiggle1 2s infinite;
+} 
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-yellow-50 via-pink-100 to-orange-100">
+  <audio id="bg-music" src="HBD.mp3" autoplay loop></audio>
+  <div class="flex flex-col items-center">
+    <div class="m-10 text-center max-w-xl">
+    <h1 class="text-7xl mb-6 px-8 py-4 bg-white/80 border-4 border-rose-300 rounded-2xl shadow-xl text-pink-800 font-bold">
+   Happy Birth Day naaa
+
+  </div>
+
+  <div> 
+    <img id='but'class="w-52 rounded-3xl shadow-lg" src="imgg/5.png" alt="">
+  </div>
+    <h1 class="text-3xl leading-loose">
+      🎂 สุขสันต์วันเกิดนะเด้กก 19 ปีแล้วว 🎉<br>
+    ผ่านอะไรมาเย้อเลยน้าา แฟนเก่งมากๆเลยน้าา 😘<br>
+    เห็นมั้ยเค้าบอกเลh;ว่าแฟนจะผ่านเรื่องต่างๆมาได้ ✨<br>
+    สุดยอดเลยยย 🏆 ขอให้ปีหน้าเป็นปีที่ดีน้าา 💫
+
+<br>จุ๊บแจ้ม 3 พานนนน 💖
+<br><h1 class="text-center">เค้ามีความลับให้ด้วยย แสกนเลยยย อิอิ</h1>
+  </div>
+  
+      <div class="grid grid-cols-3 grid-rows-3 " >
+        <img class="rounded-3xl w-52 justify-self-center col-start-1 wiggle" src="imgg/1.png" alt="">
+        <img class="rounded-3xl w-52 justify-self-center col-start-3 wiggle1" src="imgg/2.png" alt="">
+        <img class="rounded-3xl w-72 h-72 justify-self-center row-start-2 col-start-2 animate-bounce" src="imgg/wait.png" alt="">
+        <img class="rounded-3xl w-52 justify-self-center row-start-3 col-start-1 wiggle" src="imgg/3.png" alt="">
+        <img class="rounded-3xl w-52 justify-self-center row-start-3 col-start-3 wiggle1" src="imgg/4.png" alt="">
+      </div>
+
+
+  <script src="bo.js"></script>
+</body>
+</html>

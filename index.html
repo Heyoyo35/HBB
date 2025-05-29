@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>วันนี้วันอะไรเอ่ย?</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Itim', cursive;
+    }
+  </style>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gradient-to-b from-pink-100 via-yellow-100 to-blue-100">
+
+  <div class="flex flex-col items-center bg-white bg-opacity-80 backdrop-blur-md shadow-xl rounded-3xl w-96 p-8 gap-6 border border-yellow-300">
+    
+    <!-- หัวข้อ -->
+    <div class="bg-pink-100 px-4 py-2 rounded-full shadow text-center">
+      <h1 class="text-3xl text-pink-600 font-bold">วันนี้วันอะไรเอ่ย ???</h1>
+    </div>
+
+    <!-- ปุ่ม -->
+    <div class="flex gap-4">
+      <button id="r" class="w-28 h-10 text-lg bg-pink-400 text-white rounded-full hover:bg-pink-500 hover:scale-110 transition duration-300 shadow">
+        วันเด็ก
+      </button>
+      <button id="w" class="w-28 h-10 text-lg bg-white text-gray-700 border rounded-full hover:bg-gray-100 hover:scale-110 transition duration-300 shadow">
+        วันศุกร์ปกติ
+      </button>
+    </div>
+
+    <!-- รูปภาพ -->
+    <img id="im" class="h-48 w-48 rounded-full shadow-lg object-cover" src="imgg/wait.png" >
+
+  </div>
+   <script src="srca.js"></script>
+</body>
+</html>
